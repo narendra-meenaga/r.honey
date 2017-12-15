@@ -45,7 +45,7 @@ print(all_lines.collect())
 
 # "parallelize" may makes your collection suitable for processing on multiple nodes i.e it created RDD
 nums = sc.parallelize ([1,2,3,4])
-# "map"  applies a ucntion to each emelemnt in the RDD
+# "map"  applies a function to each emelemnt in the RDD
 squared = nums.map(lambda x :x *x).collect()
 for num in squared :
      print(num)
